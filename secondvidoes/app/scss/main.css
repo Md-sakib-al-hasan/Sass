@@ -11,4 +11,52 @@ h1 {
   font-size: 45px;
   padding: 40px;
   color: blue;
+}
+
+.btn, .btn_iherite {
+  padding: 40px;
+  margin: 50px;
+  background-color: aqua;
+  font-size: 20px;
+}
+
+.btn_iherite {
+  background-color: red;
+}
+
+.ifelse {
+  padding: 40px;
+  background-color: green;
+}
+
+.col-1 {
+  background-color: rgb(79, 80, 85);
+}
+
+.col-2 {
+  background-color: rgb(79, 90, 85);
+}
+
+.col-3 {
+  background-color: rgb(79, 100, 85);
+}
+
+.col-4 {
+  background-color: rgb(79, 110, 85);
+}
+
+.col-5 {
+  background-color: rgb(79, 120, 85);
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
 }/*# sourceMappingURL=main.css.map */

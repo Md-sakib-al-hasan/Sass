@@ -8,10 +8,60 @@
 @mixin color-mix ($col){
     color: $col;
 }
+@mixin font-sizes ($value) {
+    @if $value == 'smail' {
+         background-color: red;
+    }
+    @else if $value == 'big' {
+        background-color: green;
+    }
+    @else {
+        background-color: black;
+    } 
+}
+
 
 h1{
     background-color: varibale.$sk;
     @include font-padding;
     @include color-mix(blue);
 }
+
+.btn{
+    padding: 40px;
+    margin: 50px;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+.btn_iherite{
+    background-color: red;
+    @extend .btn
+}
+
+.ifelse{
+    padding: 40px;
+    @include font-sizes(big)
+}
+
+@for $i  from 1 to 6 {
+
+    .col-#{$i} {
+        background-color: rgb(79, (70+ $i*10), 85);
+    }
+
+   
+}
+
+$i:1;
+@while $i<6 {
+    $i:$i+1;
+}
+
+@each $color in red, green , blue {
+    .#{$color}-text {
+        color: $color;
+    }
+}
+
 
