@@ -1,0 +1,17 @@
+@forward '../js/reset';
+@use '../js/varibale';
+@mixin font-padding {
+    font-size: 45px;
+    padding: 40px;
+    
+}
+@mixin color-mix ($col){
+    color: $col;
+}
+
+h1{
+    background-color: varibale.$sk;
+    @include font-padding;
+    @include color-mix(blue);
+}
+
