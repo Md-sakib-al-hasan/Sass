@@ -1,0 +1,35 @@
+$header-bgcolor:#ffab73;
+$main-bgcolor: red;
+$footer_bgcolor: green;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: $header-bgcolor;
+}
+
+main{
+    background-color: $main-bgcolor;
+}
+footer{
+    background-color: $footer_bgcolor;
+}
+
+
+nav{
+  margin-top: 15px;
+  ul{
+    list-style: none;
+    li{
+        display: inline-block;
+        margin: 0 15px;
+         a{
+            text-decoration: none;
+         }
+        }
+  }
+}
